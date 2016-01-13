@@ -1,0 +1,7 @@
+function [p1,p2,p3,p4] = PlotResults(time, data, )
+    p1=subplot(231);plot(time, saved_Thrust(data));xlabel('time (s)');ylabel('Mass Flow at Outlet (kg/s)');
+    p2=subplot(232);plot(time, saved_Accel(data));xlabel('time (s)');ylabel('Internal Air Pressure(gauge Pa)');
+    p3=subplot(234);plot(time, saved_Velocity(data));xlabel('time (s)');ylabel('Mass of Air (kg)');
+    p4=subplot(235);plot(time, saved_Dist(data));xlabel('time (s)');ylabel('Mass of Water (kg)');
+end
+
